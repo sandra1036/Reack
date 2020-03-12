@@ -3,12 +3,19 @@ import logo from './logo.svg';
 //import './AppS2.css';
 import './App.css';
 
+function Hello(props){
+  return <h2>{props.title}</h2>
+}
+
+// const Hello=(props)=> <h2></h2>
+
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h2>Bienvenidos a este curso</h2>
+        <Hello title="Hello desde una funcion"/>
         <h3>Vamos ha aprender React</h3>
         <p>Hola mundo estoy utilizando React</p>
         <strong>Esto es un Strong</strong>
