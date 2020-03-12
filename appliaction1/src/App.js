@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 //import './AppS2.css';
 import './App.css';
@@ -7,15 +7,22 @@ import './App.css';
 //   return <h2>{props.title}</h2>
 // }
 
-const Hello=(props)=> <h2>{props.title}</h2>
+// const Hello=(props)=> <h2>{props.title}</h2>
 
+class Hello extends Component{
+  render(){
+    return <h2>{this.props.title}</h2>
+  }
+
+
+}
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Hello title="Hello desde una constante"/>
+        <Hello title="Hello creando un Componente"/>
         <h3>Vamos ha aprender React</h3>
         <p>Hola mundo estoy utilizando React</p>
         <strong>Esto es un Strong</strong>
