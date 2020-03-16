@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 export default class Forms extends Component{
-    handleClick=(e)=>{
+    handleonSubmit=(e)=>{
         e.preventDefault()
         const name=this.inputName.value
         const email=document.getElementById('twitter').value
@@ -12,7 +12,7 @@ export default class Forms extends Component{
         return(
             <div>
                 <h4>Formularios</h4>
-                <form>
+                <form onSubmit={this.handleonSubmit}>
                     <p>
                         <label htmlFor='name'>Nombre: </label>
                         <input
@@ -28,7 +28,7 @@ export default class Forms extends Component{
                             name='twitterAccount'
                             placeholder='Introduce tu Twitter'/>
                     </p>
-                    <button onClick={this.handleClick}>Enviar</button>
+                    <button >Enviar</button>
                 </form>
             </div>
         )
