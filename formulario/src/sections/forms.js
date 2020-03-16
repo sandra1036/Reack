@@ -8,6 +8,10 @@ export default class Forms extends Component{
         console.log({name,email})
         
     }
+    handleChange(e){
+        console.log('handleChange')
+        console.log(e.target.checked)
+    }
     render(){
         return(
             <div>
@@ -27,6 +31,12 @@ export default class Forms extends Component{
                             id='twitter'
                             name='twitterAccount'
                             placeholder='Introduce tu Twitter'/>
+                    </p>
+                    <p>
+                        <label>
+                            <input onChange={this.handleChange} type='checkbox'/>
+                            Accepted terms
+                        </label>
                     </p>
                     <button >Enviar</button>
                 </form>
