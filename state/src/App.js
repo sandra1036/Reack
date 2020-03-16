@@ -3,9 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 
 class Contador extends Component{
-  constructor(){
-    super()
-    this.state={contador:1}
+  constructor(props){
+    super(props)
+    console.log(this.props.contadorInicial)
+    this.state={contador:this.props.contadorInicial}
     setInterval(()=>{
       this.setState({contador:this.state.contador +1})
     },1000)
@@ -15,6 +16,12 @@ class Contador extends Component{
     return <ContadorNumero numero={this.state.contador}/>
   }
 }
+
+Contador.defaultProps={
+  contadorInicial: 0
+}
+
+
 class ContadorNumero extends Component{
   render(){
     console.log('ContadorNumero render()')
@@ -26,7 +33,7 @@ function App() {
   return (
     <div className="App">
       <p>Primer componente con state</p>
-      <Contador/>
+      <Contador contadorInicial={100}/>
     </div>
   );
 }
