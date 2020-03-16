@@ -13,10 +13,31 @@ class Hello extends Component{
   render(){
     return <h2>{this.props.title}</h2>
   }
-
-
 }
 
+class Text extends Component{
+  render(){
+    const {
+      arrayOfNumbers,
+      multiply,
+      objectWithInfo,
+      
+    }=this.props
+    // No se pueden modificar this.props.title=<h3>Otra cosa</h3>
+    const mappedNumbers=arrayOfNumbers.map(multiply)
+
+    return(
+      <div>
+        {this.props.title}
+        <p>{mappedNumbers.join(', ')}</p>
+        <p>{objectWithInfo.key}</p>
+      
+      
+      </div>
+    )
+  }
+
+}
 function App() {
   return (
     <div className="App">
@@ -33,7 +54,16 @@ function App() {
           target="_blank"
           rel="noopener  noreferrer"
         >
-          Learn React
+          <Text
+            arrayOfNumbers={[2,3,10]}
+            objectWithInfo={{key:'Frist Value', key2:'otherValue'}}
+            number={2}
+            text="Texto en String"
+            multiply={(number)=>number*4}
+            title={<h1>Este es el titulo</h1>}
+
+            />
+
         </a>
       </header>
     </div>
