@@ -4,7 +4,7 @@ const API_KEY = '4287ad07'
 
 export class SearchForm extends Component {
   state = {
-    results:[]
+    inputMovie: ''
   }
 
   _handleChange = (e) => {
