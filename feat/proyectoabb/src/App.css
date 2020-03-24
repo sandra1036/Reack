@@ -1,0 +1,28 @@
+.App {
+  text-align: left;
+  font-size: 14px;
+
+}
+.App-flex{
+  margin: 20px;
+  position: relative;
+  display: block;
+}
+.text-bold{
+  color:black;
+  font-weight: bold;
+}
+label{
+  color: gray;
+}
+button{
+  width: 95%;
+  margin: 8px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.nav{
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid lightgray;
+}
