@@ -1,33 +1,21 @@
 import React, { Component } from 'react';
-import './App.css';
-import Navbar from './components/Navbar'
-import Personal from './components/Personal'
-import Dates from './components/entry-dates' 
+import './App.css'; 
+import trukimg from './images/Truk.png'
+import TrukData from './pages/TrukData.js'
+import { BrowserRouter,Route, Link, Switch } from 'react-router-dom'
+
 class App extends Component {
   render(){
     return (
-      <div className="App">
-        <Navbar/>
-        <div>
-          <p className="App-flex">
-            <label>Name </label><br></br>
-            <Personal name="Eduardo"/>
-          </p>
-          <p className="App-flex">
-            <label>Last Name </label><br></br>
-            <Personal className="text-bold" name="Santamaria Garcia"></Personal>
-          </p>
-          <p className="App-flex">
-          <Dates/>
-          </p>
+        <BrowserRouter>
           
-          <div>
-            <button>SAVE DATA</button>
-            <button >CANCEL</button>
-            </div>
-      </div>
-      </div>
-    
+          <Switch>
+            <Route exact path="/TrukData"  component={TrukData} key="trukdata"/>
+            <Link to="/TrukData">
+              <img src={trukimg} className="image-class" alt="TrukImg"/>              
+            </Link>
+         </Switch>
+        </BrowserRouter>
     );
   }
 }

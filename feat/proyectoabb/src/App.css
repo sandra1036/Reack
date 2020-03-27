@@ -3,6 +3,7 @@
   font-size: 14px;
 
 }
+
 .App-flex{
   margin: 20px;
   position: relative;
@@ -38,3 +39,8 @@ input{
   margin-bottom: 10px;
 }
 
+.image-class{
+  width: 130px;
+  margin: 20px;
+  border: 1px solid black;
+}
