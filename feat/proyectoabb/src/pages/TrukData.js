@@ -6,6 +6,7 @@ import Dates from '../components/Truk-Data/entry-dates'
 import { BrowserRouter} from 'react-router-dom';
 
 class TrukData extends Component {
+
     render(){
       return (
         <BrowserRouter className="App"> 
@@ -13,7 +14,7 @@ class TrukData extends Component {
             <div>
               <p className="App-flex">
                 <label>Name </label><br></br>
-                <Personal name="Eduardo"/>
+                <Personal className="text-bold" name="Eduardo"/>
               </p>
               <p className="App-flex">
                 <label>Last Name </label><br></br>
@@ -22,12 +23,12 @@ class TrukData extends Component {
               <p className="App-flex">
                 <Dates/>
               </p>
-              <div>
+              {/* <div>
 
-                <button>SAVE DATA</button>
+                <button >SAVE DATA</button>
                 <button>CANCEL</button>
 
-                </div>
+                </div> */}
               </div>
 
         </BrowserRouter>

@@ -15,7 +15,7 @@ handleonSubmit=(e)=>{
                 id='matricula' 
                 className="text-bold"
                 name='matricula'
-                onChange={e=> this.setState({inputMatr:e.target.value})}
+                onChange={e=> this.setState({inputMatricula:e.target.value})}
                 ref={inputElement=>this.inputName=inputElement}
                 placeholder='Introduce el matricula'
                 /><br></br>
@@ -28,6 +28,9 @@ handleonSubmit=(e)=>{
                 name='trailer'
                 placeholder='Introduce el trailer'/>
                 
+                <button>SAVE DATA</button>
+                <button>CANCEL</button>
+
             </form>
         )
 
