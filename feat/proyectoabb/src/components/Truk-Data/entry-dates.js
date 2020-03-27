@@ -1,4 +1,6 @@
 import React,{Component} from 'react'
+import { Link, Route, Switch } from 'react-router-dom'
+import Home from '../../App.js'
 
 class Dates extends Component{
 handleonSubmit=(e)=>{
@@ -29,8 +31,9 @@ handleonSubmit=(e)=>{
                 placeholder='Introduce el trailer'/>
                 
                 <button>SAVE DATA</button>
-                <button>CANCEL</button>
-
+                <Link to="/">
+                   <button>CANCEL</button>
+                </Link>
             </form>
         )
 

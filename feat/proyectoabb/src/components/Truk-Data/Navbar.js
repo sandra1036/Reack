@@ -1,17 +1,17 @@
 import React,{Component} from 'react'
-import { BrowserRouter,Link, Switch } from 'react-router-dom'
+import {Link, Route} from 'react-router-dom'
 import '../../App.css';
+import Home from '../../App.js'
 class Navbar extends Component{
   render(){
       return(
           <nav className="nav">
-          <BrowserRouter>
-            <Switch>
+          <div>
+            <Route exact path="/"  component={Home} key="home"/>
               <Link to="/" >
                 <button className="nav-button">Back</button>
               </Link>
-            </Switch>
-          </BrowserRouter>
+          </div>
           <p>Truk data</p>
         </nav>
       )

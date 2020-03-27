@@ -17,9 +17,8 @@ class TrukData extends Component {
                 <Personal className="text-bold" name="Eduardo"/>
               </p>
               <p className="App-flex">
-                <label>Last Name </label><br></br>
-                <Personal className="text-bold" name="Santamaria Garcia"></Personal>
-              </p>
+                <label>Last Name </label><br></br>  
+                <Personal className="text-bold" name="García Fernandez"/>            </p>
               <p className="App-flex">
                 <Dates/>
               </p>
