@@ -15,6 +15,6 @@ class Navbar extends Component{
           <p>Truk data</p>
         </nav>
       )
-  }
+  } 
 }
 export default Navbar;
