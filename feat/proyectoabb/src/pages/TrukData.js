@@ -22,12 +22,6 @@ class TrukData extends Component {
               <p className="App-flex">
                 <Dates/>
               </p>
-              {/* <div>
-
-                <button >SAVE DATA</button>
-                <button>CANCEL</button>
-
-                </div> */}
               </div>
 
         </div>

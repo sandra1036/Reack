@@ -1,26 +1,19 @@
-import React,{Component} from 'react'
-import { Link, Route, Switch } from 'react-router-dom'
-import Home from '../../App.js'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-class Dates extends Component{
-handleonSubmit=(e)=>{
-        e.preventDefault()
-        console.log(this.state)
-        
+const handleonSubmit=(e)=>{
+    e.preventDefault()
+    console.log(this.state)    
 }
-
-    render(){
-        return(
-            <form onSubmit={this.handleonSubmit}>
+const Dates =()=>(
+    <form onSubmit={handleonSubmit}>
                 <label>Truk </label><br></br>
                 <input
                 id='matricula' 
                 className="text-bold"
                 name='matricula'
                 onChange={e=> this.setState({inputMatricula:e.target.value})}
-                ref={inputElement=>this.inputName=inputElement}
-                placeholder='Introduce el matricula'
-                /><br></br>
+                placeholder='Introduce el matricula'/><br></br>
 
                 <label>Trailer </label><br></br>
                 <input 
@@ -34,10 +27,8 @@ handleonSubmit=(e)=>{
                 <Link to="/">
                    <button>CANCEL</button>
                 </Link>
-            </form>
-        )
+        </form>
+);
 
-    }
-}
 
 export default Dates;
