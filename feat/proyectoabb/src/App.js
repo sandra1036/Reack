@@ -13,7 +13,6 @@ class App extends Component {
             <Link to="/truk-data">
               <img src={trukimg} className="image-class" alt="TrukImg"/>              
             </Link>
-            
          </Switch>
         </BrowserRouter>
     );

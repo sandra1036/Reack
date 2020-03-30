@@ -5,12 +5,12 @@ import Home from '../../App.js'
 class Navbar extends Component{
   render(){
       return(
-          <nav className="nav">
-          <div>
+        <nav className="nav">
             <Route exact path="/"  component={Home} key="home"/>
-              <Link to="/" >
-                <button className="nav-button">Back</button>
-              </Link>
+          <div>
+            <Link to="/" >
+              <button className="nav-button">Back</button>
+            </Link>
           </div>
           <p>Truk data</p>
         </nav>

@@ -9,7 +9,7 @@ class TrukData extends Component {
 
     render(){
       return (
-        <BrowserRouter className="App"> 
+        <div className="App"> 
           <Navbar/>
             <div>
               <p className="App-flex">
@@ -18,7 +18,7 @@ class TrukData extends Component {
               </p>
               <p className="App-flex">
                 <label>Last Name </label><br></br>  
-                <Personal className="text-bold" name="García Fernandez"/>            </p>
+                <Personal className="text-bold" name="García Fernandez"/></p>
               <p className="App-flex">
                 <Dates/>
               </p>
@@ -30,7 +30,7 @@ class TrukData extends Component {
                 </div> */}
               </div>
 
-        </BrowserRouter>
+        </div>
       
       );
     }
