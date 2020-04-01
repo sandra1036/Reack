@@ -1,25 +1,31 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
 
-const handleonSubmit=(e)=>{
-    e.preventDefault()
-    console.log(this.state)    
-}
-const Dates =()=>(
-    <form onSubmit={handleonSubmit}>
+
+const Dates=()=>{
+ const [matricula,setMatricula]=useState('');
+ const [trailer,setTrailer]=useState('')
+ const handleSubmit=(e)=>{
+         e.preventDefault();
+         console.log('inputMatricula:'+matricula)
+         console.log('inputTrailer:'+trailer)
+ }
+        return(
+        <form onSubmit={handleSubmit}>
                 <label>Truk </label><br></br>
                 <input
-                id='matricula' 
                 className="text-bold"
+                id='matricula' 
                 name='matricula'
-                onChange={e=> this.setState({inputMatricula:e.target.value})}
-                placeholder='Introduce el matricula'/><br></br>
+                onChange={(e)=> setMatricula(e.target.value)}
+                placeholder='Introduce el matricula'
+                value={matricula}/><br></br>
 
                 <label>Trailer </label><br></br>
                 <input 
-                id='trailer'
-                onChange={e=>this.setState({inputTrailer:e.target.value})}
                 className="text-bold"
+                id='trailer'
+                onChange={(e)=> setTrailer(e.target.value)}
                 name='trailer'
                 placeholder='Introduce el trailer'/>
                 
@@ -28,7 +34,8 @@ const Dates =()=>(
                    <button>CANCEL</button>
                 </Link>
         </form>
-);
+        );
+}
 
 
 export default Dates;
