@@ -3,7 +3,6 @@ import '../App.css';
 import Navbar from '../components/Truk-Data/Navbar'
 import Personal from '../components/Truk-Data/Personal'
 import Dates from '../components/Truk-Data/entry-dates' 
-import { BrowserRouter} from 'react-router-dom';
 
 class TrukData extends Component {
 
