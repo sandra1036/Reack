@@ -1,15 +1,17 @@
 import React,{Component} from 'react'
 import Navbar from '../components/Navbar.js'
+import '../App.css';
 
-class Home extends Component{
-    render(){
-        return(
-            <div className="App">
-                <Navbar/>
-            </div>
-        )
-    }
+const Home =()=>{
+    return(
+        <div className="App">
+            <Navbar/>
+            <p>Hola Mundo</p>
+        </div>
+    )
+
 }
+
 
 
 
