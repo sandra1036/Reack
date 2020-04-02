@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 const Dates=()=>{
  const [matricula,setMatricula]=useState('')
  const [trailer,setTrailer]=useState('')
- const handleSubmit=(e)=>{
-         e.preventDefault();
+ const handleSubmit=(event)=>{
+         event.preventDefault();
          console.log('inputMatricula:'+matricula)
          console.log('inputTrailer:'+trailer)
  }
@@ -17,7 +17,7 @@ const Dates=()=>{
                         className="text-bold"
                         id='matricula' 
                         name='matricula'
-                        onChange={(e)=> setMatricula(e.target.value)}
+                        onChange={(event)=> setMatricula(event.target.value)}
                         placeholder='Introduce el matricula'
                         value={matricula}/><br></br>
 
@@ -31,7 +31,7 @@ const Dates=()=>{
                         
                         <button>SAVE DATA</button>
                         <Link to="/">
-                        <button>CANCEL</button>
+                          <button>CANCEL</button>
                         </Link>
                 </form>
         );

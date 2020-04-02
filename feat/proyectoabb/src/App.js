@@ -11,7 +11,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/truk-data"  component={TrukData} key="trukdata"/>
             <Route exact path="/" component={Home}/>
-         </Switch>
+          </Switch>
         </BrowserRouter>
     );
   }

@@ -7,7 +7,6 @@ class Home extends Component{
     render(){
         return(
             <div>
-            
                 <Link to="/truk-data">
                     <img src={trukimg} className="image-class" alt="TrukImg"/>              
                 </Link>
