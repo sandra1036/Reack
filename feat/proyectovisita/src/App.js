@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Music from './pages/Music'
 import Profile from './pages/Profile'
 import Artist from './pages/Artist'
+import Other from './pages/Other'
 
 class App extends Component {
   render(){
@@ -11,10 +12,10 @@ class App extends Component {
       <BrowserRouter>
         <Switch>
          <Route path="/" component={Home} key="Home" exact />
-         <Route path="/profile" component={Profile} exact  />
+         <Route path="/profile" component={Profile} key="Profile" exact  />
          <Route path="/music" component={Music} key="Music" exact />
-         <Route path="/artist" compoent={Artist} key="Artist" exact />
-         <Route path="/others" key="Others" exact />
+         <Route path="/artist" component={Artist} key="Artist" exact />
+         <Route path="/others" component={Other} key="Others" exact />
         </Switch>
          
       </BrowserRouter>
