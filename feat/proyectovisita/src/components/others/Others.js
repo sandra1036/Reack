@@ -4,6 +4,11 @@ const Others=()=>{
     return(
         <div className="App">
             <p>Others</p>
+            <ul>
+              <li>Settings</li>
+              <li>About ...</li>
+            </ul>
+            
         </div>
     )
 }

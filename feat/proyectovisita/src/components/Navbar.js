@@ -25,10 +25,8 @@ class Navbar extends Component{
                     <button className="button-form">Profile</button>
                 </Link>
 
-                <Link to="/music">
-                    <button className="button-form">Music</button>
-                </Link>
-
+                <button className="button-form">Music</button>
+                
                 <Link to="/artist">
                     <button className="button-form">Artist</button>
                 </Link>

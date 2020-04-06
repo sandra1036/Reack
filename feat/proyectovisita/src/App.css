@@ -39,3 +39,7 @@ label{
 .text-bold{
   font-weight: bold;
 }
+
+ul{
+  text-align: left;
+}
