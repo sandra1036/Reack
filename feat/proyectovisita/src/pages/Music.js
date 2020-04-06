@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
+import ListMusic from '../components/music/ListMusic';
 
 const Music=()=>{
-        return(
-            <ul>
-                <li>hola</li>
-            </ul>
-        )   
+    return(
+        <ListMusic/>
+    )
 }
 
 export default Music;

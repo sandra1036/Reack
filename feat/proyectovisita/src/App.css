@@ -1,12 +1,13 @@
 .App {
   text-align: center;
   display: block;
+
 }
 .nav{
-  width: 100%;
   border-bottom: 1px solid gray;
-  position: fixed;
+  width: 100%;
   text-align: center;
+  display: block;
   
 }
 
@@ -21,8 +22,20 @@
   padding: 8px;
   
 }
+
 button:active{
   background-color: indigo;
   color: white;
 }
 
+label{ 
+
+  text-align: left;
+  display: block;
+  margin: 10px;
+  padding:5px;
+}
+
+.text-bold{
+  font-weight: bold;
+}

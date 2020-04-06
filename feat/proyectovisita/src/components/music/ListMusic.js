@@ -1,13 +1,15 @@
 import React from 'react'
 
-const Music=()=>{
+const ListMusic=()=>{
     return(
-        <div>
-                       
-        </div>
+        <div className="App">
+        <p>Music</p>
+        <ul>
+          <li>Radioactive, Imagine Dragons</li>
+          <li>Scars To Your Beautiful, Alessia Cara</li>
+        </ul>
+      </div>
     )
 }
 
-
-
-export default Music;
+export default ListMusic;
