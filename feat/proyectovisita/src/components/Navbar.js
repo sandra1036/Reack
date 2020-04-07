@@ -1,43 +1,49 @@
-import React,{Component} from 'react'
+import React, { Component } from 'react'
 import HomeImg from '../image/home_icon.png'
-import { Link } from 'react-router-dom'
+import { withRouter } from 'react-dom'
 
 
+class Navbar extends Component {
 
-class Navbar extends Component{
+    constructor(history) {
+        super()
 
-// handleonClick(){
-//     return(
-//     <Link to="/music">{}</Link>
-//         //console.log("hola")  
-        
+    }
 
-//     )
-// }
-    
-    render(){
-        return(
+    historyVar
+
+    handleonClick() {
+        history.push('/music')
+    }
+
+    handleClickO = () => {
+        history.push('/other')
+    }
+    handleClickA = () => {
+        history.push('/artist')
+    }
+    handleClickP = () => {
+        history.push('/profile')
+    }
+
+    render() {
+        return (
+
             <nav className="nav">
-                <Link to="/">
-                    <img src={HomeImg} className="img" alt="HomeImg"/>
-                </Link>  
-                <Link to="/profile">
-                    <button className="button-form">Profile</button>
-                </Link>
+                <img src={HomeImg} className="img" alt="HomeImg" />
 
-                <button className="button-form">Music</button>
-                
-                <Link to="/artist">
-                    <button className="button-form">Artist</button>
-                </Link>
+                <button className="button-form" onClick={this.handleClickP}>Profile</button>
 
-                <Link to="/others">
-                    <button className="button-form">Others</button>
-                </Link>
-                
+
+                <button className="button-form" onClick={this.handleonClick}>Music</button>
+
+
+                <button className="button-form" onClick={this.handleClickA}>Artist</button>
+
+                <button className="button-form" onClick={this.handleClickO}>Others</button>
             </nav>
         )
     }
 }
 
-export default Navbar;
+export default withRouter(Navbar);

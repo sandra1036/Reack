@@ -3,7 +3,10 @@ import Artists from '../components/artist/Artists'
 
 const Artist=()=>{
     return(
-        <Artists/>
+        <div>
+            <Artists/>
+        </div>
+        
     )
 }
 

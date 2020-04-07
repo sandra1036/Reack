@@ -3,7 +3,10 @@ import Others from '../components/others/Others'
 
 const Other=()=>{
     return(
-        <Others/>
+        <div>
+            <Others/>
+        </div>
+        
     )
 }
 

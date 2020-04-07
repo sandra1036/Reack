@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import '../App.css';
-import Music from './Music.js';
 
 const Home =()=>{
     return(

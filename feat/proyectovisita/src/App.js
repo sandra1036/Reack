@@ -9,16 +9,18 @@ import Other from './pages/Other'
 class App extends Component {
   render(){
     return (
-      <BrowserRouter>
-        <Switch>
-         <Route path="/" component={Home} key="Home" exact />
-         <Route path="/profile" component={Profile} key="Profile" exact  />
-         <Route path="/music" component={Music} key="Music" exact />
-         <Route path="/artist" component={Artist} key="Artist" exact />
-         <Route path="/others" component={Other} key="Others" exact />
-        </Switch>
-         
+      <div>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/" component={Home} key="Home" exact />
+            <Route path="/profile" component={Profile} key="Profile" exact  />
+            <Route path="/music" component={Music} key="Music" exact />
+            <Route path="/artist" component={Artist} key="Artist" exact />
+            <Route path="/others" component={Other} key="Others" exact />
+          </Switch>
       </BrowserRouter>
+      </div>
+
     );
   }
 

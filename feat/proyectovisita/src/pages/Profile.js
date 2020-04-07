@@ -1,9 +1,12 @@
-import React,{Component} from 'react'
+import React from 'react'
 import Myprofile from '../components/profile/Myprofile.js'
 
 const Profile=()=>{
         return(
-            <Myprofile />
+            <div>
+                <Myprofile />
+            </div>
+            
         )
     
 }

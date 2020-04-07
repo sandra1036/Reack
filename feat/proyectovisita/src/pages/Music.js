@@ -1,9 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ListMusic from '../components/music/ListMusic';
 
 const Music=()=>{
     return(
-        <ListMusic/>
+        <div>
+           <ListMusic/>
+        </div>
+
     )
 }
 
