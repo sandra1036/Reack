@@ -7,10 +7,9 @@ class Navbar extends Component {
 
     constructor(history) {
         super()
+        this.history=history;
 
     }
-
-    historyVar
 
     handleonClick() {
         history.push('/music')
