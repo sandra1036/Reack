@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+  
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+label{
+  display: block;
+  margin: 10px;
+}
+button{
+  display: block;
+}
