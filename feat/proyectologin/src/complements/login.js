@@ -1,24 +1,25 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import {withRouter} from 'react-router'
+import {createBrowserHistory} from 'history'
 
 
+const history =createBrowserHistory();
 
+function handleClick(){    
+    history.push("/selected");
+}
 
 const Login=()=>{
     return(
         <div>
             <p className="text-bold">Login</p>
             <label>Username</label>
-            <input placeholder="Enter your nikname"/>
+            <input placeholder="Enter your nickname" />
             <label>Password</label>
-            <input placeholder="Enter your password"/>
-
-            <Link to="/selected">
-                <button>Accept</button>
-            </Link>
-           
-        </div>
-       
+            <input placeholder="Enter your password" />
+            <button onClick={handleClick} >Accept</button>
+        </div> 
     )
-}                                                     
-export default Login;
+}
+
+export default withRouter(Login);
