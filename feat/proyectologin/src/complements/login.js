@@ -1,15 +1,11 @@
 import React from 'react'
 import {withRouter} from 'react-router'
-import {createBrowserHistory} from 'history'
 
-
-const history =createBrowserHistory();
-
-function handleClick(){    
-    history.push("/selected");
-}
-
-const Login=()=>{
+const Login=({history})=>{
+    
+    function handleClick(){    
+        history.push("/selected")
+    }
     return(
         <div>
             <p className="text-bold">Login</p>

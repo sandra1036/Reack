@@ -2,20 +2,21 @@ import React from 'react'
 import "./button-selected.style.css"
 import CaratulaImg from '../../images/selected/caratula.jpg'
 import MusicaImg from '../../images/selected/vinilo.png'
-import {createBrowserHistory} from 'history'
+import {withRouter} from 'react-router'
 
 
-const history=createBrowserHistory()
-const handleClickMusic=()=>{
-    return(   
+
+const ButtonSelected=({history})=>{
+    function handleClickMusic(){  
         history.push("/music")
-    )
-}
+    }
+    function handleClickFilm(){
+        history.push("/film")
+    }
 
-const ButtonSelected=()=>{
     return(
         <div>
-            <img className="img" src={CaratulaImg} alt="CaratulaImg"/>
+            <img className="img" onClick={handleClickFilm} src={CaratulaImg} alt="CaratulaImg"/>
             <img className="img" onClick={handleClickMusic} src={MusicaImg} alt="MusicaImg"/>
         </div>
     )
@@ -23,4 +24,4 @@ const ButtonSelected=()=>{
 
 }
 
-export default ButtonSelected;
+export default withRouter(ButtonSelected);
