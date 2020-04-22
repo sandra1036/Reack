@@ -20,7 +20,7 @@ class ListMusic extends Component{
             <div>
                 <ul>
                     <li>{music[obj].name}</li>
-                    <img className="imgArray" src={obj.image} alt="imgArray"/>
+                    <img className="imgArray" src={music[obj].image} alt="imgArray"/>
                 </ul>
             </div>
           )})}

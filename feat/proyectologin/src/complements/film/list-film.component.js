@@ -22,7 +22,7 @@ class ListFilm extends Component{
             <div>
                 <ul>
                     <li>{film[obj].name}</li>
-                    <img className="imgArray" src={obj.image} alt="imgArray"/>
+                    <img className="imgArray" src={film[obj].image} alt="imgArray"/>
                 </ul>
               
               
