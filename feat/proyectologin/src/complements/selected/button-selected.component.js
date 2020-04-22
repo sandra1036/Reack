@@ -7,11 +7,13 @@ import {withRouter} from 'react-router'
 
 
 const ButtonSelected=({history})=>{
+
     function handleClickMusic(){  
-        history.push("/music")
+        history.push("/selected/music")
     }
+    
     function handleClickFilm(){
-        history.push("/film")
+        history.push("/selected/film")
     }
 
     return(

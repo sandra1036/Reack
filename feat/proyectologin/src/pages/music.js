@@ -1,10 +1,11 @@
 import React from 'react'
+import MusicComponent from '../complements/music/music.compoonent'
 
 
 const Music=()=>{
     return(
         <div>
-            <p className="text-bold">Music</p>
+           <MusicComponent/>
         </div>
     )
 }

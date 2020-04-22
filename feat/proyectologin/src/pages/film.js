@@ -1,9 +1,10 @@
 import React from 'react'
+import FilmComponent from '../complements/film/film.component'
 
 const Films=()=>{
     return(
         <div>
-            <p className="text-bold">Films</p>
+           <FilmComponent/>
         </div>
     )
 

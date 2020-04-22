@@ -14,11 +14,10 @@ class App extends Component {
           <Switch>
             <Route  path="/" component={Home} exact/>
             <Route  path="/selected" component={Selected} exact/>
-                <Route path="/music" component={Music} exact/>
-                <Route path="/film" component={Films} exact/>
-            
-            
-
+                <Route path="/selected/music" component={Music} exact/>
+                  <Route path="/selected/music/:musicId"/>
+                <Route path="/selected/film" component={Films} exact/>
+                 <Route path="/selected/film/:filmId"/>
           </Switch>
         </BrowserRouter>
         
