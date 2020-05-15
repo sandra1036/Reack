@@ -9,11 +9,11 @@ import {withRouter} from 'react-router'
 const ButtonSelected=({history})=>{
 
     function handleClickMusic(){  
-        history.push("/selected/music")
+        history.push("/Music")
     }
     
     function handleClickFilm(){
-        history.push("/selected/film")
+        history.push("/Film")
     }
 
     return(

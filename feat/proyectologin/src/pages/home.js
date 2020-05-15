@@ -1,10 +1,10 @@
 import React from 'react'
-import Login from '../complements/login'
+import ButtonSelected from '../complements/selected/button-selected.component'
 
 const Home=()=>{
     return(
         <div>
-            <Login/>
+            <ButtonSelected/>
         </div>
     )
 }
