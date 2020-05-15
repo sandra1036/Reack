@@ -1,29 +1,10 @@
 import React, { Component } from 'react'
 import HomeImg from '../image/home_icon.png'
-import { withRouter } from 'react-dom'
+import { withRouter, Link } from 'react-router-dom'
 
 
 class Navbar extends Component {
 
-    constructor(history) {
-        super()
-        this.history=history;
-
-    }
-
-    handleonClick() {
-        history.push('/music')
-    }
-
-    handleClickO = () => {
-        history.push('/other')
-    }
-    handleClickA = () => {
-        history.push('/artist')
-    }
-    handleClickP = () => {
-        history.push('/profile')
-    }
 
     render() {
         return (
@@ -31,15 +12,21 @@ class Navbar extends Component {
             <nav className="nav">
                 <img src={HomeImg} className="img" alt="HomeImg" />
 
-                <button className="button-form" onClick={this.handleClickP}>Profile</button>
+                <Link to="/profile">
+                <button className="button-form">Profile</button>
+                </Link>
 
+                <Link to="/music">
+                <button className="button-form" >Music</button>
+                </Link>
 
-                <button className="button-form" onClick={this.handleonClick}>Music</button>
+                <Link to="/artist">
+                <button className="button-form">Artist</button>
+                </Link>
 
-
-                <button className="button-form" onClick={this.handleClickA}>Artist</button>
-
-                <button className="button-form" onClick={this.handleClickO}>Others</button>
+                <Link to="others">
+                <button className="button-form">Others</button>
+                </Link>
             </nav>
         )
     }
